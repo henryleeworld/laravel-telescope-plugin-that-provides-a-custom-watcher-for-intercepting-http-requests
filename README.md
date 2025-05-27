@@ -1,4 +1,4 @@
-# Laravel 10 提供用於攔截 HTTP 請求的自定義監視器的望遠鏡插件
+# Laravel 11 提供用於攔截 HTTP 請求的自定義監視器的望遠鏡插件
 
 引入 muhammadhuzaifa 的 telescope-guzzle-watcher 套件來擴增提供用於攔截 HTTP 請求的自定義監視器的望遠鏡插件，以便能夠看到請求和回應日誌。
 
@@ -21,10 +21,10 @@ $ php artisan key:generate
 $ php artisan migrate
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
-- 你可以經由 `/api/cat/fact` 來進行使喵星人知識取得；只能在本地環境經由 `/telescope` 來進行開發調試儀表板瀏覽。
+- 你可以經由 `/api/v1/cat/fact` 來進行使喵星人知識取得；只能在本地環境經由 `/telescope` 來進行開發調試儀表板瀏覽。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/x1mUdsM.png)
+![](https://i.imgur.com/Q5s2vmP.png)
 > 可以快速檢查特定請求／回應的全部詳細資訊

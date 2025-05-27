@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Providers\TelescopeServiceProvider;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Telescope\TelescopeServiceProvider as LaravelTelescopeServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -11,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        if ($this->app->environment('local') && class_exists(LaravelTelescopeServiceProvider::class)) {
+            $this->app->register(LaravelTelescopeServiceProvider::class);
+            $this->app->register(TelescopeServiceProvider::class);
+        }
     }
 
     /**
