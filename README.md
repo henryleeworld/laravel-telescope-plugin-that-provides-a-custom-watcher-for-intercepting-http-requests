@@ -1,4 +1,4 @@
-# Laravel 11 提供用於攔截 HTTP 請求的自定義監視器的望遠鏡插件
+# Laravel 12 提供用於攔截 HTTP 請求的自定義監視器的望遠鏡插件
 
 引入 muhammadhuzaifa 的 telescope-guzzle-watcher 套件來擴增提供用於攔截 HTTP 請求的自定義監視器的望遠鏡插件，以便能夠看到請求和回應日誌。
 
@@ -26,5 +26,5 @@ $ php artisan migrate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/Q5s2vmP.png)
+![](https://i.imgur.com/3vBI9yP.png)
 > 可以快速檢查特定請求／回應的全部詳細資訊
